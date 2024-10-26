@@ -1,0 +1,18 @@
+Start
+  Declare course_dict as an empty dictionary
+    While True DO
+        INPUT course_id
+        INPUT course_name
+        SET course_dict[course_id] = course_name
+        INPUT continue to add more courses (yes or no)
+        IF continue is 'no' THEN
+            BREAK
+    END WHILE
+
+    INPUT subject
+    FOR each key, value in course_dict DO
+        IF key starts with subject THEN
+            PRINT key and value
+        END IF
+    END FOR
+END
